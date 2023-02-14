@@ -1,0 +1,206 @@
+:root{
+    --white-text:#ffffff;
+    --purple-text:#800040 ;
+    
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box ;/*incluye el pading y el border para calcular las dimensiones de los elementos */
+   
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+.contenedor{
+    padding:60px 0;
+    width:90%;
+    max-width:1000px;
+    margin:auto;/*para centrarlo todo */
+    overflow: hidden;/*hace que el navegador oculte todos los contenidos que se salen de la caja del elemento*/
+    
+
+
+}
+.titulo{
+    color: #800040 ;
+    font-size:30px;
+    text-align: center;
+    margin-bottom:60px;/*distancia del div superor*/
+
+}
+/*Header*/
+header{
+width: 100%;
+height:600px;
+background: #7abc4e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, hsla(106, 95%, 50%, 0.123), hsla(66, 45%, 52%, 0.26)), url(./../../assets/colores-protagonismo-gif-neon-gifmaniacos.es-7.gif);
+background: linear-gradient(to right, hsla(123, 95%, 50%, 0.103), hsla(317, 45%, 52%, 0.178)), url(./../../assets/colores-protagonismo-gif-neon-gifmaniacos.es-7.gif); 
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-size: cover;/*cubriendo, el área de posicionamiento de fondo*/
+background-attachment: fixed;/*determina si la posición de la imagen de fondo será fija dentro de la pantalla o se desplazará con su bloque contenedor.*/
+position: relative;
+}
+
+
+header .textos-header{
+    display: flex;/*estructuras de una sóla dimensión(eje X)*/
+    height: 430px;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;/* para que el texto no este pagdo*/
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size:50px;
+    color:rgb(255, 255, 255);
+}
+
+.textos-header h2{
+    font-size:30px;
+    font-weight: 300;
+    color:rgb(248, 245, 248);
+}
+
+
+.wave{
+    position:absolute;/*hace que un elemento se coloque respecto a su contenedor posicionado mas cercano*/
+    bottom:0%;
+    width:100%;
+    color: #080808;
+}
+
+
+.main{
+    padding-top:60px;
+}
+
+.circulofoto{
+    border-radius:5%;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin:auto;
+    filter:drop-shadow(26px 6px 55px #000000 );
+}
+/**********************************card music****************************/
+
+.portafolio{
+    background: #181817e3;
+}
+.galeria-port{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;/* para que este uno debajo del otro*/
+    gap:3px;/*especifica los canales entre las filas y las columnas de la cuadrícula*/
+
+
+}
+
+
+/*cards studios*/
+.top-row background-top-row{
+    background-color:rgba(52,3,45,0.3);
+    backdrop-filter:blur(.4rem);
+
+}
+
+
+
+.estudiocontenedor{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background: -webkit-linear-gradient(to right, #4b4e73, #56275a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(149, 21%, 37%, 0.671), hsla(244, 40%, 25%, 0.664)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    align-items: center;   
+    
+}
+.Containerr{
+    
+    justify-content: center;
+    min-height:10vh;
+    align-items: center;
+    display:inline-flex;
+    margin-left: 18%;
+
+    
+  
+}
+
+.card{
+    border-radius: 1rem;
+    box-shadow:0 1rem 1rem rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+   overflow: hidden;
+   width:15rem;
+   backdrop-filter:blur(1rem);
+   background-color: rgba(26, 25, 25, 0.452);
+   border:1rem solid  rgba(225,225,225,0.18);
+   color: var(--white-text);
+   text-align:center ;
+   
+}
+
+
+.card p{
+    text-align:justify ;
+ 
+
+}
+
+.cardestudio{
+    transition: all 400ms ease;
+}
+
+.cardestudio:hover{
+    box-shadow:5px 5px 20px rgba(3, 3, 3, 0.966);
+    transform: translateY(-3%);
+
+}
+
+
+
+.top-row{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contentt{
+    padding:2rem;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.img-pais{
+height: auto;
+width:100%;
+}
+.tituloo{
+    color: rgb(255, 255, 255);
+
+    font-size:30px;
+    text-align: center;
+   
+    padding-top:5% ;
+    padding-bottom:1.5%;
+
+}
